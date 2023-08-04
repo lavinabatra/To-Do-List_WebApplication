@@ -1,0 +1,207 @@
+/* This are the font style which i will use in my page  */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+
+/* to clean out my css page  */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.main::before{
+    /* set the background image here  */
+    /* i will not recommand to do this it will look weard  */
+}
+
+/* to set the default font of page i use bofy  */
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+    /* background-color: red; */
+   
+}
+    
+
+.title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    background-color: #000b2f;
+    color:white;
+    padding: 18px 0px;
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    animation-name: colchange;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+.leftnavnj{
+    width: 15%;
+}
+.centernavnj{
+    width: 70%;
+    color: white;
+}
+.rightnavnj{
+    width: 15%;
+    /* background-color: white; */
+}
+.rightnavnj a{
+    color: white;
+    text-decoration: none;
+    padding: 9px 31px;
+    margin-right: 12px;
+    font-size: 1.3rem;
+    background-color: red;
+    border-radius: 3px;
+    transition: background-color;
+    transition-duration: .3s;
+}
+.rightnavnj a:hover{
+    background-color: rgba(255, 0, 0, 0.774);
+}
+@keyframes colchange{
+    0%{
+        color:white;
+
+    }
+    20%{
+        color: red;
+    }
+    40%{
+        color: blue;
+
+    }
+    60%{
+        color: green;
+    }
+    80%{
+        color: purple;
+    }
+    100%{
+        color: goldenrod;
+    }
+
+}
+.main{
+    /* background-color: red; */
+}
+
+
+input{
+    display: block;
+    width: 100%;
+    padding: 4px 4px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid black;
+    font-size: 1.3rem;
+}
+input:focus , textarea:focus{
+    border: 2px solid #0d6efd;
+}
+textarea{
+    display: block;
+    width: 100%;
+    padding: 4px 4px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 1.3rem;
+}
+.form{
+    display: block;
+    margin: auto;
+    width: 50%;
+    outline: none;
+    padding-top: 30px;
+}
+label
+{
+    font-size: 1.34rem;
+}
+td{
+    font-size: 1.3rem;;
+}
+th{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.butn{
+    margin-top: 5px;
+    margin-bottom: 46px;
+    width: 20%;
+    padding: 7px 0px;
+    background-color: #0d6efd;
+    border: 2px solid #0d6efd;
+    color: white;
+    border-radius: 5px;
+
+}
+.butne{
+   
+    color:white;
+    border: 2px solid #0d6efd;
+    background-color: #0d6efd;
+    margin-right: 13px;
+    font-size: 1.2rem;
+    padding: 4px 21px;
+    border-radius: 6px;
+    
+}
+.butn:hover ,.butne:hover{
+    background-color: #0d6dfdd5;
+    border: 2px solid #0d6dfdd5;
+}
+footer{
+    background-color: #000b2f;
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    padding: 9px 0px;
+}
+.njbutn{
+    display: flex;
+    height: 150px;
+    flex-direction: row;
+    /* background-color: red; */
+    justify-content: flex-end;
+    align-items: center;
+}
+.njbox{
+    /* width: 100%; */
+    height: 150px;
+    /* background-color: red; */
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: auto;
+   
+}
+span{
+    /* this is to add break automatically after line  */
+    white-space: pre-line ;
+    
+    overflow: auto;
+    height: 400px;
+
+}
+th.sorting {
+    width: 770px;
+    /* background-color: red; */
+}
+.titletb{
+    /* width: 250%; */
+    height: 150px;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: auto;
+    /* background-color: red; */
+}
+.don{
+    width: 300px;
+}

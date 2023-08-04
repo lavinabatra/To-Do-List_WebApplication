@@ -1,0 +1,47 @@
+body{
+    /* background-color: red; */
+}
+
+.containernj h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 29px;
+}
+.containernj form{
+    display: block;
+    margin: auto;
+    width: 50%;
+    /* background-color: red; */
+    margin-top: 30px;
+}
+.containernj form input{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 8px 5px;
+    outline: none;
+    margin: 7.6px 0px;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+.containernj form label{
+    font-size: 1.4rem;
+   
+}
+.containernj form button{
+    display: block;
+    margin: auto;
+    padding: 12px 4px;
+    width: 40%;
+    font-size: 1.22rem;
+    background-color:red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    /* transition: background-color;
+    transition-duration: 3.3s; */
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+.containernj form button:hover{
+    background-color: rgba(255, 0, 0, 0.678);
+}
