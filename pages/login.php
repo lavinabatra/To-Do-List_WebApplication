@@ -21,7 +21,7 @@
     
     <div class="containernj">
         <h1>Login To Your Account</h1>
-        <form action="/naman/pages/login.php" method="post">
+        <form action="/lavina/pages/login.php" method="post">
         <label for="emaillog">E-mail:</label>
         <input type="email" name=emaillog id=emaillog placeholder="Enter Your Email">
         <label for="passwordlog">Password:</label>

@@ -2,7 +2,7 @@
 <?php
 session_start();
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"]!=true){
-    header("location:/naman/pages/login.php");
+    header("location:/lavina/pages/login.php");
     exit;
    
 }
@@ -43,7 +43,7 @@ if($conn){
 
 }
 else{
-    header("Location: /naman/notesapp/error.html");
+    header("Location: /lavina/notesapp/error.html");
     exit();
 }
 
@@ -53,7 +53,7 @@ $sql= "SELECT * FROM `$srnonj`" ;
         // echo "successfully connected to the notes databse<br>";
     } 
     else{
-        header("Location: /naman/notesapp/error.html");
+        header("Location: /lavina/notesapp/error.html");
         exit();
 }
 
@@ -122,7 +122,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes By naman</title>
+    <title>Notes By lavina</title>
     <!-- This is the css of datatabe which i take form internet  -->
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
 
@@ -154,7 +154,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                 <div class="modal-body">
 
                 <!-- i had used post method to upsate the note  -->
-                    <form action="/naman/notesapp/index.php" method="POST">
+                    <form action="/lavina/notesapp/index.php" method="POST">
 
                         <!-- i trigger hidden button here to trigger sno edit to edit the file serial number wise  -->
                         <input type="hidden" id="snoedit" name="snoedit">
@@ -183,7 +183,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <h1>welcome <?php echo $_SESSION['username'];?></h1>
     </div>
     <div class="rightnavnj">
-            <a href='/naman/pages/logout.php'>Log Out</a>   
+            <a href='/lavina/pages/logout.php'>Log Out</a>   
             </div>
     </div>
 
@@ -194,7 +194,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <?php
             if($verify){
             // This will trigger id we are unable to connect to mysql database and the database of notes
-            header("Location: /naman/notesapp/index.php");
+            header("Location: /lavina/notesapp/index.php");
             exit();
             
     
@@ -226,7 +226,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
         <!-- The note form start here  -->
         <div class="form">
-            <form action="/naman/notesapp/index.php" method="POST">
+            <form action="/lavina/notesapp/index.php" method="POST">
                 <label for="title" class="label">Title:</label>
                 <input name="title" id="title" type="text" placeholder="Enter Title here">
                 <label for="description" class="label">Description:</label>
@@ -239,7 +239,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <!-- The form ends here  -->
 
         <!-- This is the container where i will display my datatable  -->
-        <div class="container my-4 namancust">
+        <div class="container my-4 lavinacust">
 
             <table class="table" id="myTable">
                 <thead>
@@ -278,7 +278,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             </table>
         </div>
         <footer>
-            &copy; Created By Naman Jain
+            &copy; Created By Lavina Batra
         </footer>
     </div>
 
@@ -358,7 +358,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                     // use it for debugging
                     // console.log("yes");
                     // console.log(sno);
-                    window.location=`/naman/notesapp/index.php?delete=${sno}`;
+                    window.location=`/lavina/notesapp/index.php?delete=${sno}`;
                 }
                 else{
                     // use this for debugging 
@@ -395,4 +395,4 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 
          <!-- 😀 Finally i complet this  -->
 
-        <!-- BY naman jain  -->
+        <!-- BY lavina batra  -->

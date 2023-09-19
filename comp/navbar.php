@@ -23,9 +23,9 @@ else{
         <?php
         if(!$loggedin){
         echo "<ul>
-            <li><a href='/naman/index.php'>Home</a></li>
-            <li><a href='/naman/pages/about.php'>About Us</a></li>
-            <li><a href='/naman/pages/contact.php'>Contact Us</a></li>
+            <li><a href='/lavina/index.php'>Home</a></li>
+            <li><a href='/lavina/pages/about.php'>About Us</a></li>
+            <li><a href='/lavina/pages/contact.php'>Contact Us</a></li>
         </ul>";
         }
         ?>
@@ -34,11 +34,11 @@ else{
                
                 <?php
                 if($loggedin){
-                    echo "<a href='/naman/pages/logout.php'>Log Out</a>";
+                    echo "<a href='/lavina/pages/logout.php'>Log Out</a>";
                 }
                 if(!$loggedin){
-                   echo "<a href='/naman/pages/sign_in.php'>Create account</a>
-                        <a href='/naman/pages/login.php'>Log in</a>";
+                   echo "<a href='/lavina/pages/sign_in.php'>Create account</a>
+                        <a href='/lavina/pages/login.php'>Log in</a>";
                 }
                 ?>
 

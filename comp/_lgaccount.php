@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
                 $_SESSION["loggedin"]=TRUE;
                 $_SESSION["username"]=$username;
                 $_SESSION["s.no"]=$srno;
-                header("Location: /naman/notesapp/index.php");
+                header("Location: /lavina/notesapp/index.php");
                 exit();
             }
             else{

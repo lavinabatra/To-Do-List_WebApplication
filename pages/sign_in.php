@@ -22,7 +22,7 @@
     ?>
     <div class="containernj">
         <h1>Create account</h1>
-        <form action="/naman/pages/sign_in.php" method="post">
+        <form action="/lavina/pages/sign_in.php" method="post">
             <label for="username">Name:</label>
             <input type="username" name="username" id="username" placeholder="Enter Name Here" required>
             <label for="email">E-Mail:</label>

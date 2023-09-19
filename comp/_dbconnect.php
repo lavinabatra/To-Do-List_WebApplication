@@ -14,7 +14,7 @@ if ($connect){
     // echo "we are connected successfully";
 }
 else {
-    header("Location: /naman/error_hand/error.html");
+    header("Location: /lavina/error_hand/error.html");
     exit();
 }
 
@@ -22,7 +22,7 @@ if($connect2){
     // echo "connected successfully";
 }
 else{
-    header("Location: /naman/error_hand/error.html");
+    header("Location: /lavina/error_hand/error.html");
     exit();
 }
 
@@ -52,7 +52,7 @@ if($datastr){
 
 }
 else{
-    header("Location: /naman/error_hand/error.html");
+    header("Location: /lavina/error_hand/error.html");
     exit();
 }
 
